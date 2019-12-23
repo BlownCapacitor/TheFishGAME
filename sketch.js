@@ -115,7 +115,7 @@ if(score === 0 || score < 0){
 if(gameState === START){
 play.visible = true;
 play.addImage(playimg);
-if(mousePressedOver(play)){
+if(touchStart||mousePressedOver(play)){
   gameState = PLAY;
  
 }
