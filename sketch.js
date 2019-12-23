@@ -115,8 +115,9 @@ if(score === 0 || score < 0){
 if(gameState === START){
 play.visible = true;
 play.addImage(playimg);
-if(touchStart||mousePressedOver(play)){
+if(touches.lenght > 0 ||mousePressedOver(play)){
   gameState = PLAY;
+  touches = [];
  
 }
 spawnBubbles();
